@@ -22,7 +22,7 @@ nav = st.sidebar.radio("Navigation",["Home","Budget Predictor","Add Information"
 if nav == "Home":
 
     st.title("Bussdown Worldwide Budget Calculator")
-    st.image("data//BD Logo.png", width = 500)
+    st.image("BD Logo.png", width = 500)
     st.header("Introduction")
     st.text("This is an interactive web app to help approximate finances and budget spending")
     st.header("Financial Information")
