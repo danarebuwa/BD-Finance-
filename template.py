@@ -36,7 +36,7 @@ if nav == "Home":
     plt.ylabel('Expense', fontsize=14)
     plt.grid(True)
     plt.show()
-    st.pyplot(df)
+    st.pyplot(fig)
 
     st.subheader("Expense Breakdown")
     st.dataframe(df.sort_values('Close',
@@ -66,7 +66,7 @@ if nav == "Home":
         plt.xlabel("High")
         plt.ylabel("Volume")
         plt.tight_layout()
-        st.pyplot(graph)
+        st.pyplot(fig)
     if graph == "Interactive":
         layout =go.Layout(
             xaxis = dict(range=[0,1]),
