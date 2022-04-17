@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np 
 import altair as alt
 
-data = pd.read_csv("data//coin_Cardano.csv")
+data = pd.read_csv("coin_Cardano.csv")
 x = np.array(data['High']).reshape(-1,1)
 lr = LinearRegression()
 lr.fit(x,np.array(data['Volume']))
